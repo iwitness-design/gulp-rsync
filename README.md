@@ -1,3 +1,7 @@
+Forked from https://github.com/jerrysu/gulp-rsync
+
+Original code did not honor the `times` configuration option, and since no updates have been pushed in several years, I figured that waiting for a fix wasn't the correct option.
+
 ## gulp-rsync
 
 Use the file transferring and syncing capabilities of `rsync` within your Gulp task. `gulp-rsync` calls `rsync` and offers you a subset of options for an easy setup.

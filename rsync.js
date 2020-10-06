@@ -77,7 +77,11 @@ rsync.prototype = {
         }
         return output;
       }));
-    }
+	}
+	
+	if( undefined !== this._options.t && false === this._options.t ) {
+		args.push( "--no-times" );
+	}
 
     args = args.concat(this._sources.map(escapeShellArg));
 
